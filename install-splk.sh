@@ -12,12 +12,12 @@
   sudo tar -xzf $INSTALL_FILE
  
   sudo useradd -m -r splunk
-  sudo chown -R splunk:splunk /opt/splunkforwarder
+  sudo chown -R splunk:splunk /opt/splunk
   echo $PASSWORD | sudo passwd splunk --stdin
   sudo -u splunk /opt/splunk/bin/splunk start --accept-license --answer-yes --auto-ports --no-prompt
   sudo -u splunk /opt/splunk/bin/splunk edit user admin -password $PASSWORD -auth admin:changeme
   sudo -u splunk /opt/splunk/bin/splunk restart
-  sudo /opt/splunkforwarder/bin/splunk enable boot-start -user splunk
+  sudo /opt/splunk/bin/splunk enable boot-start -user splunk
   "    
  
   echo "Starting."
