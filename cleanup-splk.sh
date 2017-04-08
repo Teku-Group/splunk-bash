@@ -7,7 +7,7 @@
   REMOTE_SCRIPT="
   sudo /opt/splunk/bin/splunk disable boot-start
   sudo -u splunk /opt/splunk/bin/splunk stop
-  rm -rf /opt/splunk
+  sudo rm -rf /opt/splunk
   sudo userdel splunk
   sudo groupdel splunk
   "    
