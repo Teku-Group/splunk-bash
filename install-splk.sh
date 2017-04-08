@@ -16,7 +16,6 @@
   echo $PASSWORD | sudo passwd splunk --stdin
   sudo -u splunk /opt/splunk/bin/splunk start --accept-license --answer-yes --auto-ports --no-prompt
   sudo -u splunk /opt/splunk/bin/splunk edit user admin -password $PASSWORD -auth admin:changeme
-  sudo -u splunk /opt/splunk/bin/splunk enable listen 9997 -auth admin:$PASSWORD
   sudo -u splunk /opt/splunk/bin/splunk restart
   sudo /opt/splunk/bin/splunk enable boot-start -user splunk
   cd ~
