@@ -18,6 +18,8 @@
   sudo -u splunk /opt/splunk/bin/splunk edit user admin -password $PASSWORD -auth admin:changeme
   sudo -u splunk /opt/splunk/bin/splunk restart
   sudo /opt/splunk/bin/splunk enable boot-start -user splunk
+  cd ~
+  sudo rm -f /opt/splunk-6.5.3-36937ad027d4-Linux-x86_64.tgz
   "    
  
   echo "Starting."
