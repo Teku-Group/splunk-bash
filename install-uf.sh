@@ -20,6 +20,8 @@
   sudo -u splunk /opt/splunkforwarder/bin/splunk edit user admin -password $PASSWORD -auth admin:changeme
   sudo -u splunk /opt/splunkforwarder/bin/splunk restart
   sudo /opt/splunkforwarder/bin/splunk enable boot-start -user splunk
+  cd ~
+  sudo rm -f /opt/$INSTALL_FILE
   "    
  
   echo "Starting."
