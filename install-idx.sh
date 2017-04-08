@@ -1,7 +1,7 @@
 #!/bin/sh
   # Example file contents:
   # splunkuser@50.18.226.85
-  HOSTS_FILE="SplunkCore"
+  HOSTS_FILE="Indexers"
   WGET_CMD="wget -O splunk-6.5.3-36937ad027d4-Linux-x86_64.tgz 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=6.5.3&product=splunk&filename=splunk-6.5.3-36937ad027d4-Linux-x86_64.tgz&wget=true'"
   INSTALL_FILE="splunk-6.5.3-36937ad027d4-Linux-x86_64.tgz"
   PASSWORD="SPLKp@ss"
